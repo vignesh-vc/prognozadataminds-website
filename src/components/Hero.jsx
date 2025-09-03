@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import one from "../assets/images/one.jpg";
-import two from "../assets/images/two.jpg";
-import three from "../assets/images/three.jpg";
-import four from "../assets/images/four.jpg";
+import one from "../assets/images/one.webp";
+import two from "../assets/images/two.webp";
+import three from "../assets/images/three.webp";
+import four from "../assets/images/four.webp";
 
 const Hero = () => {
   const slides = [
