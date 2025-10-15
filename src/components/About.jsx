@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import one from "../assets/images/one.jpg";
-
+import one from "../assets/images/one.webp";
 const AboutUs = () => {
     const stats = [
         { title: "Experience", value: "1+ Years" },

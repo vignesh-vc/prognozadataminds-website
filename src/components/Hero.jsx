@@ -7,9 +7,9 @@ import four from "../assets/images/four.webp";
 
 const Hero = () => {
   const slides = [
-    { img: one, text: "Data security and regulatory compliance are fundamental to our operations." },
-    { img: two, text: "Our Key Opinion Leaders services deliver expert insights and drive strategic impact." },
-    { img: three, text: "Systematic Identification and Profiling yields actionable insights." },
+    { img: one, text: "A systematic approach to identification and profiling results in actionable intelligence." },
+    { img: two, text: "Expert insights from our Key Opinion Leaders fuel impactful strategic decisions." },
+    { img: three, text: "Innovation led by customer needs, combined with continuous improvement, fuels competitive differentiation." },
     { img: four, text: "Continuous improvement and customer-centric innovation are vital for gaining a competitive edge." },
   ];
 
