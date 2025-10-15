@@ -66,7 +66,7 @@ const Navbar = () => {
               onClick={() => handleNavClick("npilookup")}
               className="bg-gradient-to-r from-teal-500 to-teal-600 text-white hover:from-teal-600 hover:to-teal-700 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 px-4 py-2 text-lg font-medium transition duration-300"
             >
-              Npi Lookup
+              NPI Lookup
             </button>
           </div>
 

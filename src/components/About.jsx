@@ -42,7 +42,7 @@ const AboutUs = () => {
                             </p>
 
                             <p className="text-gray-700 text-md sm:text-md leading-relaxed text-justify">
-                                Our team is proficient in various fields including <span className="font-medium text-[#00CD97]">data mining, interpretation, analytics, and management, enabling us to deliver outstanding KOL mapping and profiling services.</span> We help businesses build and sustain a comprehensive KOL database while adhering to client quality standards, consistently meeting deadlines, and achieving exceptional results.
+                                Our team is proficient in various fields including <span className="font-medium text-[#00CD97]">data mining, interpretation, analytics, and management, enabling us to deliver outstanding KOL "MAPPING" WITH "IDENTIFICATION" and profiling services.</span> We help businesses build and sustain a comprehensive KOL database while adhering to client quality standards, consistently meeting deadlines, and achieving exceptional results.
                             </p>
                         </div>
                     </motion.div>

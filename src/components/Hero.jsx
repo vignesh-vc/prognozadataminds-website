@@ -6,12 +6,30 @@ import three from "../assets/images/three.webp";
 import four from "../assets/images/four.webp";
 
 const Hero = () => {
-  const slides = [
-    { img: one, text: "A systematic approach to identification and profiling results in actionable intelligence." },
-    { img: two, text: "Expert insights from our Key Opinion Leaders fuel impactful strategic decisions." },
-    { img: three, text: "Innovation led by customer needs, combined with continuous improvement, fuels competitive differentiation." },
-    { img: four, text: "Operational integrity is driven by our commitment to data security and regulatory compliance." },
+  const highlightWords = [
+    "actionable intelligence",
+    "impactful strategic decisions",
+    "continuous improvement",
+    "competitive differentiation",
+    "data security",
+    "regulatory compliance"
   ];
+
+  const slides = [
+    { img: one, text: "A systematic approach to identification and profiling results in actionable intelligence" },
+    { img: two, text: "Expert insights from our Key Opinion Leaders fuel impactful strategic decisions" },
+    { img: three, text: "Innovation led by customer needs, combined with continuous improvement, fuels competitive differentiation" },
+    { img: four, text: "Operational integrity is driven by our commitment to data security and regulatory compliance" },
+  ];
+
+  const highlightText = (text) => {
+    let highlightedText = text;
+    highlightWords.forEach(word => {
+      const regex = new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi');
+      highlightedText = highlightedText.replace(regex, `<span class="bg-clip-text text-transparent bg-gradient-to-r from-[#00CD97] to-[#336698]">${word}</span>`);
+    });
+    return highlightedText;
+  };
 
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -61,14 +79,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-white leading-snug">
-              {slides[activeIndex].text.split(" ").map((word, i) => (
-                <span
-                  key={i}
-                  className={i % 4 === 0 ? "bg-clip-text text-transparent bg-gradient-to-r from-[#00CD97] to-[#336698]" : ""}
-                >
-                  {word + " "}
-                </span>
-              ))}
+              <span dangerouslySetInnerHTML={{ __html: highlightText(slides[activeIndex].text) }} />
             </h1>
 
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-4">
