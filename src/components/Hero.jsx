@@ -10,7 +10,7 @@ const Hero = () => {
     { img: one, text: "A systematic approach to identification and profiling results in actionable intelligence." },
     { img: two, text: "Expert insights from our Key Opinion Leaders fuel impactful strategic decisions." },
     { img: three, text: "Innovation led by customer needs, combined with continuous improvement, fuels competitive differentiation." },
-    { img: four, text: "Continuous improvement and customer-centric innovation are vital for gaining a competitive edge." },
+    { img: four, text: "Operational integrity is driven by our commitment to data security and regulatory compliance." },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);

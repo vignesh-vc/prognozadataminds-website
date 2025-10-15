@@ -3,7 +3,7 @@ import one from "../assets/images/one.webp";
 const AboutUs = () => {
     const stats = [
         { title: "Experience", value: "1+ Years" },
-        { title: "Reviews", value: "500+ Positive" },
+        { title: "Reviews", value: "Extensive positive" },
         { title: "Clients", value: "10+ Worldwide" },
     ];
 
@@ -76,7 +76,7 @@ const AboutUs = () => {
                                     transition={{ duration: 0.8, delay: idx * 0.2 }}
                                 >
                                     <h3 className="text-3xl sm:text-4xl font-bold text-[#00CD97]">{stat.value}</h3>
-                                    <p className="text-gray-700 mt-2 font-medium">{stat.title}</p>
+                                    <p className={`text-gray-700 mt-2 font-medium ${stat.title === "Reviews" ? "text-sm" : ""}`}>{stat.title}</p>
                                 </motion.div>
                             ))}
                         </div>

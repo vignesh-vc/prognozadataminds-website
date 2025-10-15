@@ -1,12 +1,12 @@
-import one from "../assets/images/Leaders-KOL-Identification.jpg"
-import two from "../assets/images/profile1.png"
-import three from "../assets/images/KOL-Mapping.jpg"
-import four from "../assets/images/Medical-Conferences.jpg"
-import five from "../assets/images/s_ab1.jpg"
-import guidelines from "../assets/images/guidelines.jpg"
-import Publication from "../assets/images/Publication-Analysis.jpg"
-import Leaders from "../assets/images/Market-Access-Identification.jpg"
-import Clinical from "../assets/images/Clinical-Trial.jpg"
+import one from "../assets/images/s1.jpg"
+import two from "../assets/images/s2.jpg"
+import three from "../assets/images/s3.jpg"
+import four from "../assets/images/s4.jpg"
+import five from "../assets/images/s5.jpg"
+import guidelines from "../assets/images/s6.jpg"
+import Publication from "../assets/images/s7.jpg"
+import Leaders from "../assets/images/s8.jpg"
+import Clinical from "../assets/images/s9.jpg"
 
 export const servicesData = [
   {
