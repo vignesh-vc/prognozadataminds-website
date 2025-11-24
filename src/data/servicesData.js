@@ -7,7 +7,7 @@ import guidelines from "../assets/images/s6.jpg"
 import Publication from "../assets/images/s7.jpg"
 import Leaders from "../assets/images/s8.jpg"
 import Clinical from "../assets/images/s9.jpg"
-
+import website from "../assets/images/website.webp"
 export const servicesData = [
   {
     id: 1,
@@ -130,6 +130,17 @@ export const servicesData = [
       `Publications - Health & Pricing related`,
       `Journals - editorial board and reviewers`,
       `Government Advisory Boards`
+    ]
+  },{
+    id: 9,
+    title: "Medical Website Developments",
+    image: website,
+    direction: "right", // image left, text right
+    description: [
+      `Transform Your Medical Practice with a Modern, Patient-Friendly Website:`],
+    points: [`In today’s digital-first world, patients search online before choosing a doctor or healthcare provider.`,
+      `A well-designed medical website not only enhances your professional reputation but also helps patients connect with you easily and confidently.`,
+      `Prognoza specialize in creating clean, modern, secure, and fully responsive medical websites tailored to the needs of doctors, clinics, and healthcare organizations.`
     ]
   }
   // Continue adding other services (Mapping, Conferences, Rising Star, etc.)

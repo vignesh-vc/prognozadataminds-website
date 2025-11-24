@@ -18,6 +18,7 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer utilities {
   @keyframes fade-in-up {
     0% { opacity: 0; transform: translateY(20px); }
@@ -36,4 +37,80 @@ code {
   .animate-slide-in-right {
     animation: slide-in-right 0.9s ease-out forwards;
   }
+}
+
+
+/* === Custom UI Utilities === */
+
+/* Dotted background pattern using radial-gradient */
+.bg-dots {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 16px 16px;
+  color: rgba(0, 0, 0, 0.06); /* dot color via currentColor */
+}
+
+/* Brand tinted dotted background (uses secondary color) */
+.bg-dots-secondary {
+  background-image: radial-gradient(#336699 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Simple float animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Fade-in + slight up transition */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeInUp 500ms ease forwards;
+}
+
+/* Bounce slow animation */
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); animation-timing-function: cubic-bezier(0.8,0,1,1); }
+  50% { transform: translateY(-8px); animation-timing-function: cubic-bezier(0,0,0.2,1); }
+}
+.animate-bounce-slow {
+  animation: bounceSlow 2.2s infinite;
+}
+
+/* Simple animation delay helpers */
+.anim-delay-0 { animation-delay: 0ms; }
+.anim-delay-100 { animation-delay: 100ms; }
+.anim-delay-200 { animation-delay: 200ms; }
+.anim-delay-300 { animation-delay: 300ms; }
+.anim-delay-400 { animation-delay: 400ms; }
+
+/* Glassmorphism helper */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Decorative wave separators (position these absolutely inside a relative container) */
+.wave-top,
+.wave-bottom {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+.wave-top { top: 0; transform: translateY(-99%); }
+.wave-bottom { bottom: 0; transform: translateY(99%); }
+
+/* Dot overlay helper (use with absolute cover) */
+.pattern-overlay {
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,0.9), transparent 70%);
 }

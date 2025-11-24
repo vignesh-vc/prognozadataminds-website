@@ -23,6 +23,11 @@ const Navbar = () => {
   const handleNavClick = (id) => {
     closeMenu();
 
+    if (id === "npilookup") {
+      navigate("/npi");
+      return;
+    }
+
     if (location.pathname !== "/") {
       // Navigate to home page first
       navigate("/", { state: { scrollToId: id } });

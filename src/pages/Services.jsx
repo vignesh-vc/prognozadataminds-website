@@ -3,7 +3,7 @@ import { servicesData } from "../data/servicesData";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import serviceBg from "../assets/images/s_img.jpg"
+import serviceBg from "../assets/images/s_img.webp"
 import ScrollButton from '../components/ScrollButton'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -39,7 +39,7 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="relative bg-gray-50 overflow-hidden">
+    <div className="relative bg-gray-50  overflow-hidden">
      
       <div className="absolute inset-0 overflow-hidden">
       
@@ -72,7 +72,7 @@ export default function Services() {
         </div>
 
        
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+        {/* <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
           <svg
             className="relative block w-full h-[80px]"
             xmlns="http://www.w3.org/2000/svg"
@@ -84,13 +84,13 @@ export default function Services() {
               className="fill-white"
             ></path>
           </svg>
-        </div>
+        </div> */}
       </div>
 
      
       <div
         ref={containerRef}
-        className="relative z-10 container mx-auto px-6 lg:px-20 py-16 space-y-28"
+        className="relative z-10  container mx-auto px-6 lg:px-20 py-16 space-y-28"
       >
         {servicesData.map((service) => (
           <div

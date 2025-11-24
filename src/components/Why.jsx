@@ -101,7 +101,10 @@ export default function Why() {
         >
           <div className="space-y-3">
             <h2 className="text-2xl sm:text-4xl lg:text-4xl font-extrabold text-gray-900 leading-tight">
-             Why Choose Us <br /> <span className="text-[#00CD97]"> <br />  <span className="text-[#336698]">Our Key Opinion Leader (KOL) Services? </span></span>
+             Why Choose Us <br />
+              <span className="text-[#00CD97]"> <br />
+                <span className="text-[#336698] text-[23px] font-bold">Why Choose </span> <br /> 
+                 <span className="text-[#336698]">Our Key Opinion Leader (KOL) Services? </span></span>
             </h2>
           </div>
         </motion.div>

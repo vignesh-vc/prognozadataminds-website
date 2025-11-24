@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import one from "../assets/images/one.webp";
 const AboutUs = () => {
     const stats = [
-        { title: "Experience", value: "1+ Years" },
+        { title: "Records", value: "Proven Track " },
         { title: "Reviews", value: "Extensive positive" },
         { title: "Clients", value: "10+ Worldwide" },
     ];
@@ -37,8 +37,8 @@ const AboutUs = () => {
                         </h2>
                         <div className="max-w-4xl mx-auto space-y-6 text-gray-700">
                             <p className="text-gray-700 text-md sm:text-mdleading-relaxed text-justify">
-                                Prognoza Dataminds is an innovative organization specializing in Key Opinion Leader (KOL) Management. We support leading pharmaceutical, biotech, medical device, and other healthcare industries by enhancing their understanding of Healthcare Professionals (HCPs) and fostering strong affiliations. Our expertise lies in data management and secondary research, focusing on areas such as KOL Identification, KOL Profiling, KOL Mapping and Analysis, Rising Star Analysis, Medical Conferences Repository, Guideline Research, Publications Analysis, Clinical Trials Analysis, and Market Access Profiling.
-                                <span className="font-semibold text-[#336698]"> Key Opinion Leader (KOL) Management</span>. The Prognoza Dataminds team is composed of highly skilled managers, experienced analysts, subject matter experts, and quality analysts. Equipped with advanced search methods and techniques, <span className="font-medium">we excel in extensive data research and management.</span>
+                                Prognoza Dataminds is an innovative organization specializing in Key Opinion Leader (KOL) Management. We support leading pharmaceutical, biotech, medical device, and other healthcare industries by enhancing their understanding of Healthcare Professionals (HCPs) and fostering strong affiliations. Our expertise lies in data management and secondary research, focusing on areas such as KOL Identification, KOL Profiling, KOL Mapping and Analysis, Rising Star Analysis, Medical Conferences Repository, Guideline Research, Publications Analysis, Clinical Trials Analysis, Market Access Profiling and Medical Website Developments.
+                                <span className="font-semibold text-[#336698]"> Key Opinion Leader (KOL) Management</span>. The Prognoza Dataminds team is composed of highly skilled managers, experienced analysts, subject matter experts, and quality analysts. Equipped with advanced search methods and techniques, <span className="font-medium">we excel in extensive data research and management. We also assist healthcare professionals in exploring the NPI database through our NPI Lookup tool. The NPI information on prognozadataminds.com is provided "AS IS" and is based on publicly available data from the National Plan and Provider Enumeration System (NPPES).</span>
                             </p>
 
                             <p className="text-gray-700 text-md sm:text-md leading-relaxed text-justify">

@@ -41,8 +41,8 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               <img src={logo} alt="Prognoza Logo" className="h-20 md:h-30 w-auto object-contain" />
               <div>
-                <span className="text-2xl font-bold">
-                  Prognoza <span className="text-[#00CD97]">Dataminds</span>
+                <span className="text-2xl text-[#00CD97] font-bold">
+                  Prognoza <span className="text-[#336699]">Dataminds</span>
                 </span>
               </div>
             </div>
@@ -118,6 +118,7 @@ const Footer = () => {
 
         <div className="mt-12 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm border-t border-gray-700 pt-6">
           <p>© prognozadataminds 2025, All rights reserved.</p>
+          <p>© Designed by prognozadataminds</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {["Terms", "Privacy", "Cookies"].map((item, idx) => (
               <a key={idx} href="#" className="hover:text-[#00CD97] transition-colors duration-300">{item}</a>
